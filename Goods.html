@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<!-- Head of the site -->
+	<head>
+		<meta http-equiv="content-type" content="text/html"; charset=utf-8" />
+		<title>Furniture shop</title>
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	</head>
+	<!-- Head of the site end -->
+	
+	<!-- style of the site elements -->
+	<style>
+#bek {
+  -webkit-mask-image: -webkit-gradient(
+    linear, right top, right bottom, 
+    color-stop(0.00,  rgba(0,0,0,1)),
+    color-stop(0.50,  rgba(0,0,0,1)),
+    color-stop(0.65,  rgba(0,0,0,0)),
+    color-stop(0.75,  rgba(0,0,0,0)),
+    color-stop(1.00,  rgba(0,0,0,0)));
+	position: absolute;
+	display: inline-block;
+	margin-left: -120px;	
+}
+	</style>
+	<!-- style of the site elements end-->
+	
+<body>
+<div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="right: 12%; width: 1363px;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="Furnitureshop.html">Furni</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" onmouseover="" style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Войти
+            </a>
+			<div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px; width: 300px; margin-left: 80px;">
+                <form class="form-horizontal" method="post" accept-charset="UTF-8">
+					
+					<label for="login">
+					Почта
+					</label>
+                    <input id="login" class="form-control login" type="text" name="username" placeholder="Example@gmail.com"><br>
+              		<label for="pass">
+					Пароль
+					</label>
+					<input id="pass" class="form-control login" type="password" name="password" placeholder="Пароль"><br>
+                    <input class="btn btn-primary" type="submit" name="submit" value="Войти">
+                </form>
+            </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" onmouseover="" style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Регистрация
+            </a>
+			<div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px; width: 300px; margin-left: 150px;">
+                <form class="form-horizontal" method="post" accept-charset="UTF-8">
+					
+					<label for="logincreate">
+					Почта
+					</label>
+                    <input id="logincreate" class="form-control login" type="text" name="username" placeholder="Example@gmail.com"><br>
+              		<label for="passcreate">
+					Пароль
+					</label>
+					<input id="passcreate" class="form-control login" type="password" name="password" placeholder="Пароль"><br>
+					<label for="passcreaterepeat">
+					 Повторите пароль
+					</label>
+					<input id="passcreaterepeat" class="form-control login" type="password" name="password" placeholder="Пароль"><br>
+                    <input class="btn btn-primary" type="submit" name="submit" value="Регистрация">
+                </form>
+            </div>		
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#" tabindex="-1" aria-disabled="false">О сайте</a>
+      </li>	  
+	  <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" onmouseover="" style="cursor: pointer;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Язык
+            </a>
+			<div class="dropdown-menu" style="padding: 15px; margin-left: 350px; >
+                <form class="form-horizontal" method="post" accept-charset="UTF-8">
+	<div class="row flyMenu">
+	<div class="col">
+					<span  onmouseover="" style="cursor: pointer;"  onClick="tranSlate(0)">Русский</span><br/>
+					<span  onmouseover="" style="cursor: pointer;"  onClick="tranSlate(1)">English</span>
+					</div>
+					</div>
+                </form>
+            </div>		
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">			
+      <input style="width: 300px;" class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    </form>
+  </div>
+</nav>
+<div>
+<img src="sitebackground.jpg" id="bek" class="img-fluid" alt="Адаптивные изображения" />
+</div>	
+
+<div class="card mb-3" style="margin-top: 250px;">
+  <div class="card-body">
+    <h1 class="card-title text-center">Тип выбранного товара</h1>
+  </div>
+</div>
+
+<h1>Товары</h1>
+<div class="row" id="cards">
+	
+	<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+	<div class="card" style="width: 100%;">
+	<img src="placeholder.jpg" class="card-img-top" alt="...">
+	<div class="card-body">
+    <h5 class="card-title">Товар</h5>
+    <p class="card-text">Описание</p>
+    <a href="Tovar.html" class="btn btn-primary">Подробнее</a>
+	</div>
+	</div>
+	</div>
+	
+	<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+	<div class="card" style="width: 100%;">
+	<img src="placeholder.jpg" class="card-img-top" alt="...">
+	<div class="card-body">
+    <h5 class="card-title">Товар</h5>
+    <p class="card-text">Описание</p>
+    <a href="Tovar.html" class="btn btn-primary">Подробнее</a>
+	</div>
+	</div>
+	</div>
+	
+	<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+	<div class="card" style="width: 100%;">
+	<img src="placeholder.jpg" class="card-img-top" alt="...">
+	<div class="card-body">
+    <h5 class="card-title">Товар</h5>
+    <p class="card-text">Описание</p>
+    <a href="Tovar.html" class="btn btn-primary">Подробнее</a>
+	</div>
+	</div>
+	</div>
+	
+	<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+	<div class="card" style="width: 100%;">
+	<img src="placeholder.jpg" class="card-img-top" alt="...">
+	<div class="card-body">
+    <h5 class="card-title">Товар</h5>
+    <p class="card-text">Описание</p>
+    <a href="Tovar.html" class="btn btn-primary">Подробнее</a>
+	</div>
+	</div>
+	</div>
+	</div>
+
+  <!-- ======= Footer ======= -->
+    <footer id="footer" style="margin-top:1000px;">
+    <div class="footer-top  text-light bg-dark">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-2 col-md-5">
+            <div class="footer-info">
+              <h3>FURNI</h3>
+
+            </div>
+          </div>
+		   <div class="col-lg-3 col-md-5">
+            <div class="footer-info">             
+              <p>
+                Pärnu mnt 57a, 10135 Tallinn <br>              
+              </p>
+
+            </div>
+          </div>
+
+ <div class="col-lg-3 col-md-5">
+            <div class="footer-info">             
+              <p>                           
+                <strong>Email:</strong> Georgi.Jefimov@tptlive.ee<br>
+              </p>
+
+            </div>
+          </div>
+
+ <div class="col-lg-3 col-md-5">
+            <div class="footer-info">             
+              <p>            
+                <strong>Phone:</strong> +169 420 228 1337<br>
+              </p>
+
+            </div>
+          </div>
+       </div>
+      <div class="copyright text-light bg-dark">
+        &copy; Copyright <strong><span>Furni</span></strong>. All Rights Reserved
+		<a href="" class="btn btn-primary">Схему сайта</a>
+      </div>
+        </div>
+      </div>
+	  </footer>
+
+  <!-- End Footer -->
+	<script language="javascript" src="js/jquery-3.5.1.slim.min.js" ></script>
+	<script language="javascript" src="js/popper.min.js" ></script>
+	<script language="javascript" src="js/bootstrap.min.js" ></script>
+</body>
+</html>
